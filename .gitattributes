@@ -1,0 +1,26 @@
+# Normalize text files with LF line endings
+* text=auto eol=lf
+
+# Treat binary files as-is (no line-ending conversions)
+*.pickle binary
+*.jpg binary
+*.png binary
+
+# Specific text files to have LF endings
+*.py text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+
+# Windows-specific scripts to use CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+
+*.env text eol=lf
+*.gitattributes text eol=lf
+
+# Set all files to LF line endings in the repository
+* text=auto
+*.js text eol=lf
+*.json text eol=lf
+*.ipynb text eol=lf
